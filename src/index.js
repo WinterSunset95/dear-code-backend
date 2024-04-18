@@ -5,11 +5,11 @@ const server = http.createServer(app);
 const { Server } = require("socket.io")
 const io = new Server(server);
 
-app.get('/', (req:any, res:any) => {
+app.get('/', (req, res) => {
 	res.send('Hello World!')
 });
 
-io.on('connection', (socket:any) => {
+io.on('connection', (socket) => {
 	console.log('a user connected')
 })
 
