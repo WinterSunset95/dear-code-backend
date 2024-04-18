@@ -1,0 +1,16 @@
+{
+  "name": "dear-code-backend",
+  "version": "1.0.0",
+  "description": "Express + socket.io + mongodb backend for dear-code",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"dev": "nodemon src/index.ts"
+  },
+  "author": "WinterSunset95",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
