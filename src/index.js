@@ -12,14 +12,16 @@ const io = require('socket.io')(server, {
 	}
 })
 
-app.use(cors())
+app.use(cors({
+	origin: '*'
+}))
 
 app.get('/', (req, res) => {
 	res.send('Hello World!')
 });
 
 io.on('connection', (socket) => {
-	console.log('a user connected')
+	console.log(socket.id + " Connected")
 	io.emit('message', 'A user connected')
 })
 
