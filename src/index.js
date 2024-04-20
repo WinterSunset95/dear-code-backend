@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000
 
 const io = require('socket.io')(server, {
 	cors: {
-		origin: ["http://localhost:3000", "http://localhost:5173", "https://dear-code-backend.onrender.com"],
+		origin: ["http://localhost:3000", "http://localhost:5173", "https://dear-code.vercel.app", "https://dear-code.vercel.app/code"],
 	}
 })
 
